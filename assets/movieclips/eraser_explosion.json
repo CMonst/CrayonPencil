@@ -1,0 +1,179 @@
+{"frames": {
+
+"all0000":
+{
+	"frame": {"x":162,"y":417,"w":47,"h":113},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":18,"w":100,"h":147},
+	"sourceSize": {"w":100,"h":147}
+},
+"all0001":
+{
+	"frame": {"x":0,"y":410,"w":61,"h":120},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":23,"y":18,"w":100,"h":147},
+	"sourceSize": {"w":100,"h":147}
+},
+"all0002":
+{
+	"frame": {"x":88,"y":407,"w":74,"h":120},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":18,"w":100,"h":147},
+	"sourceSize": {"w":100,"h":147}
+},
+"all0003":
+{
+	"frame": {"x":260,"y":399,"w":74,"h":126},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":12,"w":100,"h":147},
+	"sourceSize": {"w":100,"h":147}
+},
+"all0004":
+{
+	"frame": {"x":334,"y":405,"w":74,"h":126},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":12,"w":100,"h":147},
+	"sourceSize": {"w":100,"h":147}
+},
+"all0005":
+{
+	"frame": {"x":408,"y":405,"w":74,"h":126},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":12,"w":100,"h":147},
+	"sourceSize": {"w":100,"h":147}
+},
+"all0006":
+{
+	"frame": {"x":181,"y":286,"w":79,"h":131},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":12,"w":100,"h":147},
+	"sourceSize": {"w":100,"h":147}
+},
+"all0007":
+{
+	"frame": {"x":93,"y":276,"w":88,"h":131},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":12,"w":100,"h":147},
+	"sourceSize": {"w":100,"h":147}
+},
+"all0008":
+{
+	"frame": {"x":0,"y":279,"w":88,"h":131},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":12,"w":100,"h":147},
+	"sourceSize": {"w":100,"h":147}
+},
+"all0009":
+{
+	"frame": {"x":0,"y":144,"w":93,"h":135},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":12,"w":100,"h":147},
+	"sourceSize": {"w":100,"h":147}
+},
+"all0010":
+{
+	"frame": {"x":377,"y":270,"w":90,"h":135},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":12,"w":100,"h":147},
+	"sourceSize": {"w":100,"h":147}
+},
+"all0011":
+{
+	"frame": {"x":286,"y":0,"w":97,"h":135},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":12,"w":100,"h":147},
+	"sourceSize": {"w":100,"h":147}
+},
+"all0012":
+{
+	"frame": {"x":383,"y":0,"w":96,"h":135},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":12,"w":100,"h":147},
+	"sourceSize": {"w":100,"h":147}
+},
+"all0013":
+{
+	"frame": {"x":286,"y":135,"w":96,"h":135},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":12,"w":100,"h":147},
+	"sourceSize": {"w":100,"h":147}
+},
+"all0014":
+{
+	"frame": {"x":382,"y":135,"w":96,"h":135},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":12,"w":100,"h":147},
+	"sourceSize": {"w":100,"h":147}
+},
+"all0015":
+{
+	"frame": {"x":97,"y":141,"w":96,"h":135},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":12,"w":100,"h":147},
+	"sourceSize": {"w":100,"h":147}
+},
+"all0016":
+{
+	"frame": {"x":281,"y":270,"w":96,"h":129},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":12,"w":100,"h":147},
+	"sourceSize": {"w":100,"h":147}
+},
+"all0017":
+{
+	"frame": {"x":97,"y":0,"w":97,"h":141},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":147},
+	"sourceSize": {"w":100,"h":147}
+},
+"all0018":
+{
+	"frame": {"x":0,"y":0,"w":97,"h":144},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":147},
+	"sourceSize": {"w":100,"h":147}
+},
+"all0019":
+{
+	"frame": {"x":194,"y":0,"w":92,"h":144},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":147},
+	"sourceSize": {"w":100,"h":147}
+},
+"all0020":
+{
+	"frame": {"x":193,"y":144,"w":88,"h":142},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":0,"w":100,"h":147},
+	"sourceSize": {"w":100,"h":147}
+}},
+"meta": {
+	"app": "Adobe Flash CS6",
+	"version": "12.0.0.481",
+	"image": "eraser_explosion.png",
+	"format": "RGBA8888",
+	"size": {"w":512,"h":1024},
+	"scale": "1"
+}
+}

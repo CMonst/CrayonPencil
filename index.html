@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CrayonPencil !</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/layout.css" media="all" />
+        <script src="js/libs/jquery-1.9.0/jquery.min.js"></script>
+        <script src="js/libs/pixi.js"></script>
+        <script type="text/javascript">
+            /* DEFINE GLOBALS */
+            canvasWidth = 600;
+            canvasHeight = 800;
+
+            GameStates = {
+                WaitingForState: 'waiting',
+                Loading: 'loading',
+                Menu: 'menu',
+                Lost: 'lost',
+                Level1: 'level1',
+                Level2: 'level2'
+            };
+
+            gameState = GameStates.Loading;
+        </script>
+        <script src="js/PositionCanvas.js"></script>
+        <script src="js/classes/PreloadAudio.js"></script>
+        <script src="js/classes/Projectile.js"></script>
+        <script src="js/classes/Enemy.js"></script>
+        <script src="js/levels/loading.js"></script>
+        <script src="js/levels/level1.js"></script>
+        <script src="js/levels/level2.js"></script>
+    </head>
+
+    <body>
+        <script type="text/javascript">
+            // create an new instance of a pixi stage
+            var stage = new PIXI.Stage(0xFFFFFF, true);
+
+            // create a renderer instance
+            var renderer = PIXI.autoDetectRenderer(canvasWidth, canvasHeight);
+
+            // add the renderer view element to the DOM
+            document.body.appendChild(renderer.view);
+
+            var loading_screenFrameName = "assets/images/loading_screen.png";
+
+            //frame names
+            var bgTileFrameName = "assets/images/bg_tile.jpg";
+            var enemy1_eraserFrameName = "assets/images/enemy1_eraser.png";
+            var enemy1_eraser_explosionFrameName = "assets/movieclips/eraser_explosion.json";
+            var pencilFrameName = "assets/images/mainship_pencil.png";
+            var pencil_proj1_tipFrameName = "assets/images/pencil_projectile1_tip.png";
+
+            var toLoad = [enemy1_eraserFrameName, pencil_proj1_tipFrameName, enemy1_eraser_explosionFrameName];
+            var preloadAudio = ['assets/music/Fireproof_Babies_-_Lilly....so_far_away'];
+
+            var bgTiles = [];
+            var audioArray = [];
+            var explosionTextures = [];
+            var pencil_explosion;
+
+            requestAnimFrame(animate);
+
+            var Loader = new LoadingLevel(toLoad, preloadAudio);
+            Loader.FinishedLoading = FinishedLoading;
+
+            function FinishedLoading()
+            {
+                for (var i = 0; i < 21; i++)
+                {
+                    var currentInt = '' + i;
+                    for (var j = 0; j < 6 - currentInt.length; j++)
+                        currentInt = "0" + currentInt;
+                    var texture = PIXI.Texture.fromFrame("all" + currentInt);
+                    explosionTextures.push(texture);
+                }
+
+                audioArray = Loader.getAudioArray();
+                Loader.End(); //does nothing now, here as a reminder
+
+                level1 = new Level1();
+                level1.LevelEnded = FinishedLevel1;
+                gameState = GameStates.Level1;
+            }
+
+            function FinishedLevel1(win)
+            {
+                if (win)
+                {
+                    level2 = new Level2();
+                    level2.LevelEnded = FinishedLevel2;
+                    gameState = GameStates.Level2;
+                }
+                else
+                {
+                    level1 = new Level1();
+                    level1.LevelEnded = FinishedLevel1;
+                    gameState = GameStates.Level1;
+                }
+            }
+
+            function FinishedLevel2(win)
+            {
+                level1 = new Level1();
+                level1.LevelEnded = FinishedLevel1;
+                gameState = GameStates.Level1;
+            }
+
+            function animate()
+            {
+                requestAnimFrame(animate);
+
+                switch (gameState)
+                {
+                    case GameStates.WaitingForState:
+                        break;
+                    case GameStates.Loading:
+                        Loader.animate();
+                        break;
+                    case GameStates.Level1:
+                        level1.animate();
+                        break;
+                    case GameStates.Level2:
+                        level2.animate();
+                        break;
+                    default:
+                        console.error('Unknown game state ' + gameState);
+                }
+
+                renderer.render(stage);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+/* 
+    Document   : layout
+    Created on : Apr 16, 2013, 12:51:19 PM
+    Author     : Mohamed Refaat
+*/
+
+@font-face 
+{
+    font-family: 'BuxtonSketch';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Buxton Sketch'), local('BuxtonSketch'), url('BuxtonSketch.ttf') format('truetype');
+}
+body 
+{
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+canvas
+{
+    position: absolute;
+}
